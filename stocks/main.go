@@ -64,7 +64,6 @@ func main() {
 		timeSeries := *response.TimeSeries
 		for _, timeStamp := range timeSeries.TimeStamps() {
 			value := (timeSeries)[timeStamp]
-			// TimeSeriesIntraDay
 			fmt.Println(timeStamp, value.Open(), value.High(), value.Low(), value.Close(), value.Volume())
 		}
 	}	
